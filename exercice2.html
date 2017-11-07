@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 1 Canvas</title>
+</head>
+<body>
+  <canvas id="canvas1" width="400" height="400">
+  </canvas>
+  <script>
+  var c = document.getElementById( "canvas1" );
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(150,150);
+  ctx.lineTo(400,150);
+  ctx.lineTo(275,25);
+  ctx.closePath();
+  ctx.fillStyle = "#D7823D";
+  ctx.fill();
+  ctx.fillStyle = "#A1D8E6";
+  ctx.fillRect(150,150,250,400);
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fillRect(175,175,40,40);
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fillRect(335,175,40,40);
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fillRect(250,325,60,90);
+  </script>
+</body>
+</html>
